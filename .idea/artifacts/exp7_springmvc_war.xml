@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="exp7_springmvc:war">
+    <output-path>$PROJECT_DIR$/exp7_springmvc/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>exp7_springmvc</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="exp7_springmvc.war">
+      <element id="artifact" artifact-name="exp7_springmvc:war exploded" />
+    </root>
+  </artifact>
+</component>

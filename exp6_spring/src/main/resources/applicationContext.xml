@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="com.o_dentist.spring.brand.Golf" id="Golf"></bean>
+    <bean class="com.o_dentist.spring.brand.Ford" id="ford"></bean>
+    <bean id="CarApp" class="com.o_dentist.spring.org.CarApp"></bean>
+    <bean id="Brand1" class="com.o_dentist.spring.car.Car">
+        <property name="brand" ref="Golf"></property>
+    </bean>
+    <bean id="Brand2" class="com.o_dentist.spring.car.Car">
+        <property name="brand" ref="ford"></property>
+    </bean>
+</beans>

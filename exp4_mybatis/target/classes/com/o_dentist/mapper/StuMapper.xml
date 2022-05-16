@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace=绑定一个指定的Dao/Mapper接口-->
+<mapper namespace="com.o_dentist.mapper.stuDao">
+    <insert id="addUser" parameterType="com.o_dentist.pojo.exp_stu">
+        insert into exp_stu(stuno, name, sex, score)
+        values (#{stuno}, #{name}, #{sex}, #{score})
+    </insert>
+<!--    <update id="updateUser" parameterType="com.o_dentist.pojo.exp_stu">-->
+<!--        update USER-->
+<!--        set pwd=#{pwd}-->
+<!--        where name = #{name}-->
+<!--    </update>-->
+<!--    <select id="getstu" resultType="java.util.Map">-->
+<!--        select name, score-->
+<!--        from exp_stu-->
+<!--        where stuno=#{stuno}-->
+<!--    </select>-->
+<!--    <delete id="deleteUser" parameterType="java.lang.String">-->
+<!--        delete-->
+<!--        USER where name=-->
+<!--        #{name}-->
+<!--    </delete>-->
+
+<!--    <select id="getUserList" resultType="com.o_dentist.pojo.exp_stu">-->
+<!--        select *-->
+<!--        from USER-->
+<!--    </select>-->
+</mapper>

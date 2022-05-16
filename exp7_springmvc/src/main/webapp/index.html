@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div>数学成绩</div>
+<div><input type="button" value="查询成绩" onclick="getclass()"></div>
+<div id="student">
+<table border="1">
+    <th >
+        <td>学号</td>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>成绩</td>
+    </th>
+    <tr v-for="student in students">
+        <td></td>
+        <td v-text="student.stuno"></td>
+        <td v-text="student.name"></td>
+        <td v-text="student.sex"></td>
+        <td v-text="student.score"></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/vue.min.js"></script>
+<script type="text/javascript">
+
+  var vr = new Vue({
+    el : '#student',
+    data : {
+      students : [{
+        stuno : '?',
+        name  : '?',
+        sex  : '?',
+        score  : '?'
+      }]
+    }
+  });
+
+  function getclass(){
+    $.ajax({
+      type:"POST",
+      url:"/queryclass.action",
+      dataType:"json",
+      success: function(data){
+        vr.students = data;
+        console.log("recv message:"+JSON.stringify(data));
+      },
+      error: function(data, type, err){
+        console.log(type);
+        console.log(err);
+      }
+    });
+  }
+</script>

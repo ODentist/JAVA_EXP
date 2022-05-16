@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="STU">
+<input type="text" v-model="message">
+  <div>
+    {{message}}
+  </div>
+</div>
+<div id="exp">
+    <div v-for="student in students">
+        <p>{{student.name}}</p>
+    </div>
+</div>
+</body>
+
+</html>
+<script>
+    var vm= new Vue({
+        el:'#STU',
+        data:{
+            message:"1902021123,廖思睿"
+        }
+    })
+</script>
+<script>
+    var vm=new Vue({
+        el: '#exp',
+        data: {
+            students:[{name:"student1"},{name:"student2"},{name:"student3"},{name:"student4"}]
+        }
+    })
+</script>

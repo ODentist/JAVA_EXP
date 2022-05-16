@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Proxy_Calculate/Proxy_Calculate.iml" filepath="$PROJECT_DIR$/Proxy_Calculate/Proxy_Calculate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exp2_json/exp2_json.iml" filepath="$PROJECT_DIR$/exp2_json/exp2_json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exp3_vue/exp3_vue.iml" filepath="$PROJECT_DIR$/exp3_vue/exp3_vue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exp4_mybatis/exp4_mybatis.iml" filepath="$PROJECT_DIR$/exp4_mybatis/exp4_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exp5_redis/exp5_redis.iml" filepath="$PROJECT_DIR$/exp5_redis/exp5_redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exp6_spring/exp6_spring.iml" filepath="$PROJECT_DIR$/exp6_spring/exp6_spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exp7_springmvc/exp7_springmvc.iml" filepath="$PROJECT_DIR$/exp7_springmvc/exp7_springmvc.iml" />
+    </modules>
+  </component>
+</project>
