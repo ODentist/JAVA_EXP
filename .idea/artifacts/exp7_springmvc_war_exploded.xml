@@ -28,6 +28,9 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.60" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.6" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.28" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">

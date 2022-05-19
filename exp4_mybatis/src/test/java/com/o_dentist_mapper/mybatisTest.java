@@ -21,8 +21,11 @@ public class mybatisTest {
         exp_stu ABao = new exp_stu();
         //mapper.addUser(ABao);
         HashMap<String, Object> map = new HashMap<>();
+        map.put("stuno",ABao.getStuno());
+        map.put("sex",ABao.getSex());
         map.put("name",ABao.getName());
         map.put("score",ABao.getScore());
+
         Map getstu = mapper.getstu(5);
         System.out.println(getstu);
 

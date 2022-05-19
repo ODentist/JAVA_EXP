@@ -10,7 +10,7 @@
         values (#{stuno}, #{name}, #{sex}, #{score})
     </insert>
 <!--    <update id="updateUser" parameterType="com.o_dentist.pojo.exp_stu">-->
-<!--        update USER-->
+<!--        update USER--
 <!--        set pwd=#{pwd}-->
 <!--        where name = #{name}-->
 <!--    </update>-->
