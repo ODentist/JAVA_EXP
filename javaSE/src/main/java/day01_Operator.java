@@ -1,5 +1,8 @@
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -47,4 +50,101 @@ public void mountain(){
     System.out.println(count);
     System.out.println(paper);
 }
+//随机数
+    @Test
+    public void random(){
+        //创建随机数对象
+        for (int i=0 ;i<=10;i++) {
+            Random random = new Random();
+            int data = random.nextInt(10);
+        }
+    }
+    //静态数组代码
+    @Test
+    public void Array(){
+        //简化版
+        double[] scores = {98.5, 75.2, 77.4};
+        //默认静态素组
+        int[] age = new int[]{18, 19, 22,15,35};
+        String[] name={"老王","老李","老赵"};
+        //取值
+        System.out.println(age[2]);
+        //长度
+        //索引为长度-1
+        System.out.println(age.length);
+        System.out.println("------------------");
+        //foreach循环遍历数组
+        for (int ages: age) {
+            System.out.println(ages);
+        }
+        System.out.println("------------------");
+        //用长度遍历
+        for (int i=0;i<age.length;i++){
+            System.out.println(age[i]);
+        }
+    }
+    //例题数组求和
+    @Test
+    public void sum(){
+        int[] money={16,26,36,6,100};
+        int count=0;
+        for (int i=0;i<money.length;i++) {
+            count+=money[i];
+        }
+        System.out.println(count);
+    }
+
+    //数组元素求最值
+    @Test
+    public void faceScore(){
+        int[] facescore={15,90,95,88,17,-5};
+        int stable=facescore[0];
+        for (int i = 0; i < facescore.length; i++) {
+            if (facescore[i]>stable){
+                stable=facescore[i];
+            }
+        }
+        System.out.println(stable);
+    }
+    //动态数组
+    @Test
+    public void dynamicArray(){
+        List<Integer> random = new ArrayList<Integer>();
+        Random random1 = new Random();
+
+        for (int i = 0; i < 5; i++) {
+            int x = random1.nextInt(1,20);
+            random.add(x);
+        }
+        System.out.println(random);
+        //求最大
+        Integer max= random.get(0);
+        for (Integer integer : random) {
+            if (max < integer) {
+                max = integer;
+            }
+        }
+        System.out.println(max);
+    }
+    @Test
+    public void pop(){
+        int [] a={12,77,5,4,65,25};
+        //分析循环了几轮遍历（a.length-1次循环）
+        //外层：注意定义的循环次数要准确
+        for (int i = 1; i <= a.length-1; i++) {
+            //内层
+            for (int j = 0; j < a.length-i; j++) {
+                int temp=a[j+1];
+                if (a[j]>a[j+1]){
+                    a[j+1]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+    }
+    //内存new是堆内存
+    //方法是栈内存
 }
