@@ -147,4 +147,23 @@ public void mountain(){
     }
     //内存new是堆内存
     //方法是栈内存
+
+
+    //求质数
+    @Test
+    public void sigleNumber(){
+        for (int i = 101; i <=200; i++) {
+            //寻找100-200的质数
+            boolean flag=true;//要求找一个信息位置判定是否为质数（默认为质数
+            for (int j = 2; j <i/2; j++) {
+                if (i%j==0){
+                    flag=false;
+                    break;//不是质数跳出当前循环
+                }
+            }
+            if (flag){//是的话输出
+                System.out.println(i);
+            }
+        }
+    }
 }
